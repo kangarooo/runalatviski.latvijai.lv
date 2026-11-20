@@ -34,6 +34,11 @@
 	</div>
 </footer>
 
+<?php if ( is_singular( 'post' ) ) : ?>
+<div class="read-progress" aria-hidden="true"><span></span></div>
+<?php endif; ?>
+<button type="button" class="to-top" aria-label="<?php esc_attr_e( 'Uz augšu', 'runalatviski' ); ?>">↑</button>
+
 <?php wp_footer(); ?>
 </body>
 </html>

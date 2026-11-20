@@ -67,8 +67,9 @@ if ( $camp_text ) :
 			<?php endif; ?>
 		</div>
 	</div>
+</header>
 
-	<nav class="main-nav" id="main-nav" aria-label="<?php esc_attr_e( 'Galvenā izvēlne', 'runalatviski' ); ?>">
+<nav class="main-nav" id="main-nav" aria-label="<?php esc_attr_e( 'Galvenā izvēlne', 'runalatviski' ); ?>">
 		<div class="wrap">
 			<button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">☰ <?php esc_html_e( 'Izvēlne', 'runalatviski' ); ?></button>
 			<div class="menu-wrap">
@@ -82,8 +83,7 @@ if ( $camp_text ) :
 				?>
 			</div>
 		</div>
-	</nav>
-</header>
+</nav>
 
 <main id="content" class="site-content">
 	<div class="wrap">

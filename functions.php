@@ -62,6 +62,12 @@ function runalv_assets() {
 }
 add_action( 'wp_enqueue_scripts', 'runalv_assets' );
 
+/** Flag JS early so reveal animations never hide content without JS. */
+function runalv_js_class() {
+	echo "<script>document.documentElement.classList.add('js');</script>\n";
+}
+add_action( 'wp_head', 'runalv_js_class', 1 );
+
 /* ---------------------------------------------------------------
  * Widgets
  * ------------------------------------------------------------- */
